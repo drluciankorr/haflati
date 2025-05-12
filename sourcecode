@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haflati | حفلات أعياد الميلاد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to top right, #fff0f5, #ffe4e1);
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: slideIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .container::before {
+      content: "🎈";
+      font-size: 2rem;
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .container::after {
+      content: "🎉";
+      font-size: 2rem;
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .services {
+      font-size: 1.2rem;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .services h2 {
+      position: relative;
+      display: inline-block;
+    }
+
+    .services h2::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60%;
+      margin: 10px auto;
+      background: #ff5f6d;
+      border-radius: 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .gallery {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 15px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+      font-weight: bold;
+    }
+
+    .contact a.instagram {
+      background-color: #ff5f6d;
+    }
+
+    .contact a.instagram:hover {
+      background-color: #ff2e51;
+      transform: scale(1.05);
+    }
+
+    .contact a.facebook {
+      background-color: #1877f2;
+    }
+
+    .contact a.facebook:hover {
+      background-color: #0d65d9;
+      transform: scale(1.05);
+    }
+
+    .contact p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #ff5f6d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        width: 0;
+      }
+      to {
+        opacity: 1;
+        width: 60%;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Haflati</h1>
+  <p>لحفلات أعياد الميلاد فقط</p>
+</header>
+
+<div class="container">
+  <div class="services">
+    <h2>خدماتنا</h2>
+    <p>متخصصون في تنظيم حفلات أعياد الميلاد بأسلوب فريد وذكريات لا تُنسى! نقدم لكم ديكورات ساحرة، تنسيقات إبداعية، وترفيه مميز يجعل من يوم ميلاد أحبائكم لحظة استثنائية بكل المقاييس.</p>
+  </div>
+
+  <div class="gallery">
+    <h2>من حفلاتنا 🎂</h2>
+    
+    <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371509708770250863/IMG-20250512-WA0021.jpg?ex=68236573&is=682213f3&hm=4492bcb3b1dfecfdcf0ccea2b9feaba4a25491f1004453080985e0ccd3a71db4&" alt="صورة من حفلة 2">
+    <img src="https://cdn.discordapp.com/attachments/1274294754150056060/1371509697617596587/IMG-20250512-WA0019.jpg?ex=68236571&is=682213f1&hm=e5a4958f3f05e762dcba1a6186accc560b43697d92fb8ac1df3e7c446e3450cd&" alt="صورة من حفلة 3">
+  </div>
+
+  <div class="contact">
+    <h3>تواصل معنا:</h3>
+    <a href="https://www.instagram.com/haflati5?igsh=d3dkYzdiYjJyd2l5" target="_blank" class="instagram">Instagram</a>
+    <a href="https://www.facebook.com/share/1AkuyunwqE/" target="_blank" class="facebook">Facebook</a>
+    <p>رقم الهاتف: 07976843223</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Haflati | حفلات أعياد الميلاد فقط</p>
+</footer>
+
+</body>
+</html>
